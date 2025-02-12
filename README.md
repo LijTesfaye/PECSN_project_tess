@@ -8,7 +8,7 @@ waypoint, it selects a new one and moves towards it.
 
 Vehicles are equipped with a wireless interface and can communicate with other vehicles falling
 within their transmission range M. Every T seconds each vehicle checks how many cars are within its
-transmission range. The relationship between T and M is expressed as 𝑇 =∝× 𝑀! due to power
+transmission range. The relationship between T and M is expressed as  $T = \alpha \times M^2$ due to power
 constraints. α is the efficiency of the wireless interface and can assume values between 0 and 1.
 Evaluate at least the overall rate of vehicles sensed per second for various values of M and α.
 At least the following scenario has to be evaluated:
