@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>pecsn_project_tess.Car</name>
+    <filename>pecsn_project_tess.Car.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pecsn_project_tess.simulations.CarSensingNetwork</name>
+    <filename>pecsn_project_tess.simulations.CarSensingNetwork.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pecsn_project_tess.simulations.CarSensingNetwork2</name>
+    <filename>pecsn_project_tess.simulations.CarSensingNetwork2.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.DatarateChannel</name>
+    <filename>ned.DatarateChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.DelayChannel</name>
+    <filename>ned.DelayChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IBidirectionalChannel</name>
+    <filename>ned.IBidirectionalChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IdealChannel</name>
+    <filename>ned.IdealChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IUnidirectionalChannel</name>
+    <filename>ned.IUnidirectionalChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pecsn_project_tess.MobiltiyModule</name>
+    <filename>pecsn_project_tess.MobiltiyModule.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pecsn_project_tess.SensingModule</name>
+    <filename>pecsn_project_tess.SensingModule.html</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,18 @@
+# OMNeT++ build and cache files
+out/
+debug/
+release/
+cmake-build-*/
+
+# OMNeT++ temporary files
+*.o
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+*.log
+*.bak
+*.d
+*.pyc
+*.pyo

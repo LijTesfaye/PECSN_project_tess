@@ -1,0 +1,628 @@
+version 3
+run overAllRate-17-20250205-16:09:28-22268
+attr configname overAllRate
+attr datetime 20250205-16:09:28
+attr datetimef 20250205-160928
+attr experiment overAllRate
+attr inifile omnetpp.ini
+attr iterationvars "$0=0.01, $1=150"
+attr iterationvarsd 0.01/150
+attr iterationvarsf 0.01,150-
+attr measurement "$0=0.01, $1=150"
+attr network VehicularSensingNetwork
+attr processid 22268
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 17
+attr seedset 17
+config image-path ../../inet4.5/images
+config sim-time-limit 10000s
+config warmup-period 100s
+config repeat 5
+config *.numCars 10
+config *.car[*].customSensing.alphaValue 0.01
+config *.car[*].customSensing.communicationRange 150m
+config description "Wireless Vehicular Sensing Project"
+config network VehicularSensingNetwork
+config num-rngs 3
+config seed-set 17
+config *.car[*].rng-0 0
+config *.car[*].customSensing.rng-0 1
+config *.car[*].customMobility.rng-0 2
+config *.car[*].minSpeed 5mps
+config *.car[*].maxSpeed 20mps
+config *.car[*].minCoordValue 0m
+config *.car[*].maxCoordValue 500m
+config *.car[*].customMobility.typename inet.mobility.single.RandomWaypointMobility
+config *.car[*].customMobility.minInitDistance 10m
+config *.mobilityVisualizer.displayTrajectory true
+config *.car[*].customMobility.displayPosition true
+
+par VehicularSensingNetwork.car[0].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[0].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[0].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[0].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[0].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[0].customMobility faceForward true
+par VehicularSensingNetwork.car[0].customMobility initialX 423.331m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility initialY 339.377m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[0].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[0].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[0].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[0].customMobility totalCars 10
+par VehicularSensingNetwork.car[0].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[0].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[0].customSensing carID 0
+par VehicularSensingNetwork.car[0].customSensing totalCars 10
+par VehicularSensingNetwork.car[0].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[0].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[0].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[0].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[0] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[0] carIndex 0
+par VehicularSensingNetwork.car[0] allCars 10
+par VehicularSensingNetwork.car[0] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[0] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[0] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[0] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[1].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[1].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[1].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[1].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[1].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[1].customMobility faceForward true
+par VehicularSensingNetwork.car[1].customMobility initialX 280.583m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility initialY 423.133m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[1].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[1].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[1].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[1].customMobility totalCars 10
+par VehicularSensingNetwork.car[1].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[1].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[1].customSensing carID 1
+par VehicularSensingNetwork.car[1].customSensing totalCars 10
+par VehicularSensingNetwork.car[1].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[1].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[1].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[1].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[1] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[1] carIndex 1
+par VehicularSensingNetwork.car[1] allCars 10
+par VehicularSensingNetwork.car[1] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[1] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[1] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[1] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[2].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[2].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[2].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[2].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[2].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[2].customMobility faceForward true
+par VehicularSensingNetwork.car[2].customMobility initialX 227.438m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility initialY 16.9929m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[2].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[2].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[2].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[2].customMobility totalCars 10
+par VehicularSensingNetwork.car[2].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[2].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[2].customSensing carID 2
+par VehicularSensingNetwork.car[2].customSensing totalCars 10
+par VehicularSensingNetwork.car[2].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[2].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[2].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[2].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[2] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[2] carIndex 2
+par VehicularSensingNetwork.car[2] allCars 10
+par VehicularSensingNetwork.car[2] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[2] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[2] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[2] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[3].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[3].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[3].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[3].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[3].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[3].customMobility faceForward true
+par VehicularSensingNetwork.car[3].customMobility initialX 176.087m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility initialY 387.166m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[3].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[3].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[3].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[3].customMobility totalCars 10
+par VehicularSensingNetwork.car[3].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[3].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[3].customSensing carID 3
+par VehicularSensingNetwork.car[3].customSensing totalCars 10
+par VehicularSensingNetwork.car[3].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[3].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[3].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[3].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[3] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[3] carIndex 3
+par VehicularSensingNetwork.car[3] allCars 10
+par VehicularSensingNetwork.car[3] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[3] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[3] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[3] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[4].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[4].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[4].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[4].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[4].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[4].customMobility faceForward true
+par VehicularSensingNetwork.car[4].customMobility initialX 292.926m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility initialY 362.117m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[4].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[4].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[4].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[4].customMobility totalCars 10
+par VehicularSensingNetwork.car[4].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[4].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[4].customSensing carID 4
+par VehicularSensingNetwork.car[4].customSensing totalCars 10
+par VehicularSensingNetwork.car[4].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[4].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[4].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[4].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[4] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[4] carIndex 4
+par VehicularSensingNetwork.car[4] allCars 10
+par VehicularSensingNetwork.car[4] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[4] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[4] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[4] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[5].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[5].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[5].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[5].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[5].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[5].customMobility faceForward true
+par VehicularSensingNetwork.car[5].customMobility initialX 267.875m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility initialY 226.457m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[5].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[5].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[5].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[5].customMobility totalCars 10
+par VehicularSensingNetwork.car[5].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[5].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[5].customSensing carID 5
+par VehicularSensingNetwork.car[5].customSensing totalCars 10
+par VehicularSensingNetwork.car[5].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[5].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[5].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[5].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[5] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[5] carIndex 5
+par VehicularSensingNetwork.car[5] allCars 10
+par VehicularSensingNetwork.car[5] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[5] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[5] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[5] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[6].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[6].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[6].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[6].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[6].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[6].customMobility faceForward true
+par VehicularSensingNetwork.car[6].customMobility initialX 413.728m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility initialY 244.331m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[6].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[6].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[6].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[6].customMobility totalCars 10
+par VehicularSensingNetwork.car[6].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[6].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[6].customSensing carID 6
+par VehicularSensingNetwork.car[6].customSensing totalCars 10
+par VehicularSensingNetwork.car[6].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[6].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[6].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[6].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[6] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[6] carIndex 6
+par VehicularSensingNetwork.car[6] allCars 10
+par VehicularSensingNetwork.car[6] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[6] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[6] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[6] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[7].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[7].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[7].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[7].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[7].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[7].customMobility faceForward true
+par VehicularSensingNetwork.car[7].customMobility initialX 132.271m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility initialY 436.298m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[7].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[7].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[7].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[7].customMobility totalCars 10
+par VehicularSensingNetwork.car[7].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[7].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[7].customSensing carID 7
+par VehicularSensingNetwork.car[7].customSensing totalCars 10
+par VehicularSensingNetwork.car[7].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[7].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[7].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[7].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[7] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[7] carIndex 7
+par VehicularSensingNetwork.car[7] allCars 10
+par VehicularSensingNetwork.car[7] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[7] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[7] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[7] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[8].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[8].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[8].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[8].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[8].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[8].customMobility faceForward true
+par VehicularSensingNetwork.car[8].customMobility initialX 239.19m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility initialY 367.828m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[8].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[8].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[8].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[8].customMobility totalCars 10
+par VehicularSensingNetwork.car[8].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[8].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[8].customSensing carID 8
+par VehicularSensingNetwork.car[8].customSensing totalCars 10
+par VehicularSensingNetwork.car[8].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[8].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[8].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[8].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[8] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[8] carIndex 8
+par VehicularSensingNetwork.car[8] allCars 10
+par VehicularSensingNetwork.car[8] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[8] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[8] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[8] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.car[9].customMobility typename "\"pecsn_project_tess.MobilityModule\""
+par VehicularSensingNetwork.car[9].customMobility subjectModule "\"^\""
+par VehicularSensingNetwork.car[9].customMobility coordinateSystemModule "\"\""
+par VehicularSensingNetwork.car[9].customMobility displayStringTextFormat "\"p: %p\\nv: %v\""
+attr mutable ""
+par VehicularSensingNetwork.car[9].customMobility updateDisplayString true
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMinX 0m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMinY 0m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMinZ 0m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMaxX 500m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMaxY 500m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility constraintAreaMaxZ 0m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility updateInterval 0.1s
+attr unit s
+par VehicularSensingNetwork.car[9].customMobility faceForward true
+par VehicularSensingNetwork.car[9].customMobility initialX 173.893m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility initialY 299.39m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility initialZ 0m
+attr unit m
+par VehicularSensingNetwork.car[9].customMobility initFromDisplayString true
+par VehicularSensingNetwork.car[9].customMobility speed "uniform(parent.minSpeed, parent.maxSpeed)"
+attr unit mps
+par VehicularSensingNetwork.car[9].customMobility waitTime 0s
+attr unit s
+par VehicularSensingNetwork.car[9].customMobility totalCars 10
+par VehicularSensingNetwork.car[9].customMobility minInitDistance 10m
+attr unit m
+par VehicularSensingNetwork.car[9].customSensing typename "\"pecsn_project_tess.SensingModule\""
+par VehicularSensingNetwork.car[9].customSensing carID 9
+par VehicularSensingNetwork.car[9].customSensing totalCars 10
+par VehicularSensingNetwork.car[9].customSensing communicationRange 150m
+attr unit m
+par VehicularSensingNetwork.car[9].customSensing alphaValue 0.01
+par VehicularSensingNetwork.car[9].customSensing sensingInterval 1s
+attr unit s
+par VehicularSensingNetwork.car[9].customSensing outputFile "\"vehicles_sensed\""
+par VehicularSensingNetwork.car[9] typename "\"pecsn_project_tess.Car\""
+par VehicularSensingNetwork.car[9] carIndex 9
+par VehicularSensingNetwork.car[9] allCars 10
+par VehicularSensingNetwork.car[9] minCoordValue 0m
+attr unit m
+par VehicularSensingNetwork.car[9] maxCoordValue 500m
+attr unit m
+par VehicularSensingNetwork.car[9] minSpeed 5mps
+attr unit mps
+par VehicularSensingNetwork.car[9] maxSpeed 20mps
+attr unit mps
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer typename "\"inet.visualizer.canvas.mobility.MobilityCanvasVisualizer\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer visualizationTargetModule "\"^.^\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer visualizationSubjectModule "\"^.^\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer tags "\"\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer displayMobility true
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer animationSpeed 0
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer moduleFilter "\"**.mobility\""
+attr mutable ""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer displayPositions false
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer positionCircleRadius 4
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer positionCircleLineWidth 1
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer positionCircleLineColor "\"dark\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer positionCircleFillColor "\"dark\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer displayOrientations false
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationPieRadius 32
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationPieSize 0.2
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationPieOpacity 0.25
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationLineColor "\"black\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationLineStyle "\"solid\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationLineWidth 1
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer orientationFillColor "\"blue\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer displayVelocities false
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer velocityArrowScale 1
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer velocityLineColor "\"black\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer velocityLineStyle "\"solid\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer velocityLineWidth 1
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer displayMovementTrails false
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer movementTrailLineColor "\"dark\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer movementTrailLineStyle "\"solid\""
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer movementTrailLineWidth 1
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer trailLength 100
+par VehicularSensingNetwork.mobilityVisualizer.canvasVisualizer zIndex 0
+par VehicularSensingNetwork.mobilityVisualizer typename "\"inet.visualizer.common.MobilityVisualizer\""
+par VehicularSensingNetwork typename "\"pecsn_project_tess.simulations.VehicularSensingNetwork\""
+par VehicularSensingNetwork numCars 10
+

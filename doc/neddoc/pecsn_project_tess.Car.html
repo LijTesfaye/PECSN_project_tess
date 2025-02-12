@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>Car</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Car</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#pecsn_project_tess">pecsn_project_tess</a></p>
+<h2 class="comptitle" style="float: left;">Car</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #00ff0040;">
+    <span class="mdl-chip__text">compound module</span>
+</span><div style="clear: both;"/>
+
+<img src="pecsn_project_tess.Car-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="pecsn_project_tess.MobiltiyModule.html" title="customMobility : MobiltiyModule
+
+Source:
+customMobility: MobiltiyModule {
+    carId = parent.carIndex;
+    @display(&quot;p=98,109&quot;);
+}" alt="customMobility : MobiltiyModule
+
+Source:
+customMobility: MobiltiyModule {
+    carId = parent.carIndex;
+    @display(&quot;p=98,109&quot;);
+}" coords="57,129,143,188">
+<area shape="rect" href="pecsn_project_tess.SensingModule.html" title="customSensing : SensingModule
+
+TODO auto-generated type
+
+Source:
+customSensing: SensingModule {
+    carID = parent.carIndex;  // Pass carIndex to customSensing
+    @display(&quot;p=224,101&quot;);
+}" alt="customSensing : SensingModule
+
+TODO auto-generated type
+
+Source:
+customSensing: SensingModule {
+    carID = parent.carIndex;  // Pass carIndex to customSensing
+    @display(&quot;p=224,101&quot;);
+}" coords="185,121,268,180">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="pecsn_project_tess.Car-usage.svg"></object>
+<h3 class="subtitle">Used in</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.simulations.CarSensingNetwork" href="pecsn_project_tess.simulations.CarSensingNetwork.html">CarSensingNetwork</a></td>
+      <td><i>network</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+</table>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>carIndex</td>
+      <td>int</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>numCars</td>
+      <td>int</td>
+      <td>10</td>
+      <td>
+<p>Define the number of cars</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>minCoordValue</td>
+      <td>int</td>
+      <td>0m</td>
+      <td>
+<p>the min coordinate value</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>maxCoordValue</td>
+      <td>int</td>
+      <td>500m</td>
+      <td>
+<p>the max coordinate value</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>minSpeed</td>
+      <td>double</td>
+      <td>1mps</td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>maxSpeed</td>
+      <td>double</td>
+      <td>10mps</td>
+      <td>
+<p>double coordOffsetFactor = default(20.0);  // Factor to modify the position for each car
+int randomSpread @unit(m) = default(50m);  // Extra spread for initial positions</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>display</td>
+      <td>i=block/cogwheel;bgb=400,400</td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.subjectModule</td>
+      <td>string</td>
+      <td>"^"</td>
+      <td>
+<p>module path which determines the subject module, the motion of which this mobility model describes, the default value is the parent module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.coordinateSystemModule</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>module path of the geographic coordinate system module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"p: %p\nv: %v"</td>
+      <td>
+<p>format string for the mobility module's display string text</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.updateDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables continuous update of the subject module's position via modifying its display string</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.faceForward</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.initFromDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables one time initialization from the subject module's display string</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.numCars</td>
+      <td>int</td>
+      <td></td>
+      <td>
+<p>Total number of cars</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.sensingInterval</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>Sensing interval</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.communicationRange</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>Transmission range</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #808080; font-style: italic; ">//
+</span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Car</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/cogwheel;bgb=400,400&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">carIndex</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numCars</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">10</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// Define the number of cars
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">);</span><span style="color: #808080; font-style: italic; ">// the min coordinate value
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">500</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// the max coordinate value
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">minSpeed</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mps</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">mps</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxSpeed</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mps</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">10</span><span style="color: #000000; ">mps</span><span style="color: #000000; ">);
+
+        </span><span style="color: #808080; font-style: italic; ">//double coordOffsetFactor = default(20.0);  // Factor to modify the position for each car
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//int randomSpread @unit(m) = default(50m);  // Extra spread for initial positions
+</span><span style="color: #000000; ">    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">//Custom Random Mobility simple module
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">customMobility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">MobiltiyModule</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; ">carId</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">carIndex</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=98,109&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #808080; font-style: italic; ">// Custom Sensing simple Module  
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">customSensing</span><span style="color: #000000; ">: </span><span style="color: #000000; ">SensingModule</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; ">carID</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">carIndex</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// Pass carIndex to customSensing
+</span><span style="color: #000000; ">            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=224,101&quot;</span><span style="color: #000000; ">);
+        }
+}
+</span></pre>
+File: <a href="src-Car.ned.html">src/Car.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

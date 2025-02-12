@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>CarSensingNetwork</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">CarSensingNetwork</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#pecsn_project_tess_simulations">pecsn_project_tess.simulations</a></p>
+<h2 class="comptitle" style="float: left;">CarSensingNetwork</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #2196f340;">
+    <span class="mdl-chip__text">network</span>
+</span><div style="clear: both;"/>
+<p>(no description)</p>
+<img src="pecsn_project_tess.simulations.CarSensingNetwork-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="pecsn_project_tess.Car.html" title="car[numCars] : Car
+
+Source:
+car[numCars]: Car {
+    carIndex = index;
+    // @display(&quot;p=246.43199,241.59999&quot;);
+    @display(&quot;p=211.4,221.064&quot;);
+}" alt="car[numCars] : Car
+
+Source:
+car[numCars]: Car {
+    carIndex = index;
+    // @display(&quot;p=246.43199,241.59999&quot;);
+    @display(&quot;p=211.4,221.064&quot;);
+}" coords="174,239,248,298">
+<area shape="rect" href="../../../inet4.5/doc/neddoc/inet.visualizer.common.MobilityVisualizer.html" title="mobilityVisualizer : MobilityVisualizer
+
+This module integrates canvas and osg mobility visualizers into a single module.
+
+Source:
+mobilityVisualizer: MobilityVisualizer {
+    @display(&quot;p=73.687996, 45.904&quot;);
+}
+    // No explicit need for connections since the wireless communication is handled by the radio medium" alt="mobilityVisualizer : MobilityVisualizer
+
+This module integrates canvas and osg mobility visualizers into a single module.
+
+Source:
+mobilityVisualizer: MobilityVisualizer {
+    @display(&quot;p=73.687996, 45.904&quot;);
+}
+    // No explicit need for connections since the wireless communication is handled by the radio medium" coords="28,65,123,124">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="pecsn_project_tess.simulations.CarSensingNetwork-usage.svg"></object>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>numCars</td>
+      <td>int</td>
+      <td>10</td>
+      <td>
+<p>Define the number of cars</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>isNetwork</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>display</td>
+      <td>bgb=500,500</td>
+      <td>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.subjectModule</td>
+      <td>string</td>
+      <td>"^"</td>
+      <td>
+<p>module path which determines the subject module, the motion of which this mobility model describes, the default value is the parent module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.coordinateSystemModule</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>module path of the geographic coordinate system module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"p: %p\nv: %v"</td>
+      <td>
+<p>format string for the mobility module's display string text</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.updateDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables continuous update of the subject module's position via modifying its display string</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.faceForward</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.MobiltiyModule" href="pecsn_project_tess.MobiltiyModule.html">customMobility</a>.<a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.initFromDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables one time initialization from the subject module's display string</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.numCars</td>
+      <td>int</td>
+      <td></td>
+      <td>
+<p>Total number of cars</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.sensingInterval</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>Sensing interval</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">car</a>.<a title="pecsn_project_tess.SensingModule" href="pecsn_project_tess.SensingModule.html">customSensing</a>.communicationRange</td>
+      <td>double</td>
+      <td></td>
+      <td>
+<p>Transmission range</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">CarSensingNetwork</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numCars</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">10</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// Define the number of cars
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=500,500&quot;</span><span style="color: #000000; ">);
+
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">car</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numCars</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">Car</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; ">carIndex</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">index</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">// @display(&quot;p=246.43199,241.59999&quot;);
+</span><span style="color: #000000; ">            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=211.4,221.064&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">mobilityVisualizer</span><span style="color: #000000; ">: </span><span style="color: #000000; ">MobilityVisualizer</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=73.687996, 45.904&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #808080; font-style: italic; ">// No explicit need for connections since the wireless communication is handled by the radio medium
+</span><span style="color: #000000; ">}
+</span></pre>
+File: <a href="simulations-CarSensingNetwork.ned.html">simulations/CarSensingNetwork.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

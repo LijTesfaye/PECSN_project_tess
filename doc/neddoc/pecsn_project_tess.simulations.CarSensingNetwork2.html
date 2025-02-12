@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>CarSensingNetwork2</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">CarSensingNetwork2</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#pecsn_project_tess_simulations">pecsn_project_tess.simulations</a></p>
+<h2 class="comptitle" style="float: left;">CarSensingNetwork2</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #2196f340;">
+    <span class="mdl-chip__text">network</span>
+</span><div style="clear: both;"/>
+<p>(no description)</p>
+<img src="pecsn_project_tess.simulations.CarSensingNetwork2-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="../../../inet4.5/doc/neddoc/inet.physicallayer.wireless.ieee80211.packetlevel.Ieee80211ScalarRadioMedium.html" title="medium : Ieee80211ScalarRadioMedium
+
+This radio medium model uses scalar transmission power in the analog representation.
+
+Source:
+medium: Ieee80211ScalarRadioMedium {
+    @display(&quot;p=275.424,88.184&quot;);
+}" alt="medium : Ieee80211ScalarRadioMedium
+
+This radio medium model uses scalar transmission power in the analog representation.
+
+Source:
+medium: Ieee80211ScalarRadioMedium {
+    @display(&quot;p=275.424,88.184&quot;);
+}" coords="207,97,254,149">
+<area shape="rect" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html" title="car[numCars] : WirelessHost
+
+Models a host with (default) one wireless (802.11) card in infrastructure mode.
+
+Source:
+car[numCars]: WirelessHost {  //A host from INET
+    @display(&quot;p=119.591995,288.712&quot;);
+    // x
+    mobility.constraintAreaMinX = parent.minCoordValue;
+    mobility.constraintAreaMaxX = parent.maxCoordValue;
+    // y 
+    mobility.constraintAreaMinY = parent.minCoordValue;
+    mobility.constraint..." alt="car[numCars] : WirelessHost
+
+Models a host with (default) one wireless (802.11) card in infrastructure mode.
+
+Source:
+car[numCars]: WirelessHost {  //A host from INET
+    @display(&quot;p=119.591995,288.712&quot;);
+    // x
+    mobility.constraintAreaMinX = parent.minCoordValue;
+    mobility.constraintAreaMaxX = parent.maxCoordValue;
+    // y 
+    mobility.constraintAreaMinY = parent.minCoordValue;
+    mobility.constraint..." coords="64,262,138,315">
+<area shape="rect" href="../../../inet4.5/doc/neddoc/inet.visualizer.common.MobilityVisualizer.html" title="mobilityVisualizer : MobilityVisualizer
+
+This module integrates canvas and osg mobility visualizers into a single module.
+
+Source:
+mobilityVisualizer: MobilityVisualizer {
+    @display(&quot;p=73.687996,45.904&quot;);
+}
+    // No explicit need for connections since the wireless communication is handled by the radio medium" alt="mobilityVisualizer : MobilityVisualizer
+
+This module integrates canvas and osg mobility visualizers into a single module.
+
+Source:
+mobilityVisualizer: MobilityVisualizer {
+    @display(&quot;p=73.687996,45.904&quot;);
+}
+    // No explicit need for connections since the wireless communication is handled by the radio medium" coords="15,58,110,117">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="pecsn_project_tess.simulations.CarSensingNetwork2-usage.svg"></object>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>numCars</td>
+      <td>int</td>
+      <td>10</td>
+      <td>
+<p>Define the number of cars</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>minCoordValue</td>
+      <td>int</td>
+      <td>0m</td>
+      <td>
+<p>the min coordinate value</p>
+</td>
+   </tr>
+   <tr class="local">
+      <td>maxCoordValue</td>
+      <td>int</td>
+      <td>100m</td>
+      <td>
+<p>the max coordinate value</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>isNetwork</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>display</td>
+      <td>bgb=600,600</td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="inet.physicallayer.wireless.ieee80211.packetlevel.Ieee80211ScalarRadioMedium" href="../../../inet4.5/doc/neddoc/inet.physicallayer.wireless.ieee80211.packetlevel.Ieee80211ScalarRadioMedium.html">medium</a>.<a title="inet.physicallayer.wireless.common.contract.packetlevel.INeighborCache" href="../../../inet4.5/doc/neddoc/inet.physicallayer.wireless.common.contract.packetlevel.INeighborCache.html">neighborCache</a>.refillPeriod</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.lifecycle.NodeStatus" href="../../../inet4.5/doc/neddoc/inet.common.lifecycle.NodeStatus.html">status</a>.initialStatus</td>
+      <td>string</td>
+      <td>"UP"</td>
+      <td>
+<p>TODO @signal, @statistic</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.verbose</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>whether to log packets on the module output</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.pcapFile</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>the PCAP file to be written</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.fileFormat</td>
+      <td>string</td>
+      <td>"pcapng"</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.snaplen</td>
+      <td>int</td>
+      <td>65535</td>
+      <td>
+<p>maximum number of bytes to record per packet</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.dumpBadFrames</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enable dump of frames with hasBitError</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.moduleNamePatterns</td>
+      <td>string</td>
+      <td>"wlan[*] eth[*] ppp[*]"</td>
+      <td>
+<p>space-separated list of sibling module names to listen on</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.sendingSignalNames</td>
+      <td>string</td>
+      <td>"packetSentToLower"</td>
+      <td>
+<p>space-separated list of outbound packet signals to subscribe to</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.receivingSignalNames</td>
+      <td>string</td>
+      <td>"packetReceivedFromLower"</td>
+      <td>
+<p>space-separated list of inbound packet signals to subscribe to</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.dumpProtocols</td>
+      <td>string</td>
+      <td>"ethernetmac ppp ieee80211mac"</td>
+      <td>
+<p>space-separated list of protocol names as defined in the Protocol class</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.packetFilter</td>
+      <td>object</td>
+      <td>"*"</td>
+      <td>
+<p>which packets are considered, matches all packets by default</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.helpers</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>usable PcapRecorder::IHelper helpers for accept packettype and store/convert packet as specified linktype
+currently available: "inet::AckingMacToEthernetPcapRecorderHelper"</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.alwaysFlush</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>flush the pcapFile after each write to ensure that all packets are captured in case of a crash</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.packet.recorder.PcapRecorder" href="../../../inet4.5/doc/neddoc/inet.common.packet.recorder.PcapRecorder.html">pcapRecorder</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"rec: %n pks"</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.networklayer.common.InterfaceTable" href="../../../inet4.5/doc/neddoc/inet.networklayer.common.InterfaceTable.html">interfaceTable</a>.displayAddresses</td>
+      <td>bool</td>
+      <td>false</td>
+      <td>
+<p>whether to display IP addresses on links</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">cb</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">cb</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">cb</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">bl</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">bl</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">bl</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">li</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">li</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">li</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.linklayer.contract.IEthernetInterface" href="../../../inet4.5/doc/neddoc/inet.linklayer.contract.IEthernetInterface.html">eth</a>.bitrate</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">nl</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">nl</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">nl</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">tn</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">tn</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">tn</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">at</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"processed %p pk (%l)"</td>
+      <td>
+<p>determines the text that is written on top of the submodule</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">at</a>.forwardServiceRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.node.inet.WirelessHost" href="../../../inet4.5/doc/neddoc/inet.node.inet.WirelessHost.html">car</a>.<a title="inet.common.MessageDispatcher" href="../../../inet4.5/doc/neddoc/inet.common.MessageDispatcher.html">at</a>.forwardProtocolRegistration</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">CarSensingNetwork2</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numCars</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">10</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// Define the number of cars
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">);</span><span style="color: #808080; font-style: italic; ">// the min coordinate value
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">100</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// the max coordinate value
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=600,600&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">// Get a radio medium for a wireless communication
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">medium</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Ieee80211ScalarRadioMedium</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=275.424,88.184&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #808080; font-style: italic; ">// radioMedium: RadioMedium {@display(&quot;p=400.424,99.184&quot;); }
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">car</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numCars</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">WirelessHost</span><span style="color: #000000; "> {  </span><span style="color: #808080; font-style: italic; ">//A host from INET
+</span><span style="color: #000000; ">            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=119.591995,288.712&quot;</span><span style="color: #000000; ">);
+            </span><span style="color: #808080; font-style: italic; ">// x
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMinX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMaxX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">// y 
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMinY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMaxY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">// z
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMinZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">constraintAreaMaxZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">;
+
+            </span><span style="color: #808080; font-style: italic; ">//Initials
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">initialX</span><span style="color: #000000; "> = </span><span style="color: #800080; ">uniform</span><span style="color: #000000; ">(</span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">, </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">initialY</span><span style="color: #000000; "> = </span><span style="color: #800080; ">uniform</span><span style="color: #000000; ">(</span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">, </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">.</span><span style="color: #000000; ">initialZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// Set Z to 0 if the simulation is 2D
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//			
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//			mobility.initialX = min(parent.maxCoordValue, max(parent.minCoordValue, uniform(parent.minCoordValue, parent.maxCoordValue) + index * 10m));
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//            mobility.initialY = min(parent.maxCoordValue, max(parent.minCoordValue, uniform(parent.minCoordValue, parent.maxCoordValue) + index * 5m));		
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//             Connect to the radio medium
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//                    submodules:
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//           submodules:
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//               customMobility: CustomMobility {
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//                   @display(&quot;p=50,50&quot;);
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//                   }
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//                   
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">wlan</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">].</span><span style="color: #000000; ">radio</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioMediumModule</span><span style="color: #000000; "> = </span><span style="color: #008000; ">&quot;CarSensingNetwork.medium&quot;</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// To connect wireless NIC to the radio medium
+</span><span style="color: #000000; ">
+        }
+        </span><span style="color: #000000; ">mobilityVisualizer</span><span style="color: #000000; ">: </span><span style="color: #000000; ">MobilityVisualizer</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=73.687996,45.904&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #808080; font-style: italic; ">// No explicit need for connections since the wireless communication is handled by the radio medium
+</span><span style="color: #000000; ">}
+
+</span></pre>
+File: <a href="simulations-CarSensingNetwork2.ned.html">simulations/CarSensingNetwork2.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

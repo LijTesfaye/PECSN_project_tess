@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.4" doxygen_gitid="62655e983acec90d4946fa60ab28211277867fb0*">
+  <compound kind="file">
+    <name>SensingModule.cpp</name>
+    <path>E:/omnetpp-workspace/PECSN_project_tess/src/</path>
+    <filename>_sensing_module_8cpp.html</filename>
+    <includes id="_sensing_module_8h" name="SensingModule.h" local="yes" imported="no">SensingModule.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>_sensing_module_8cpp.html</anchorfile>
+      <anchor>a3b08d6735b203a180105dc3934021a1c</anchor>
+      <arglist>(SensingModule)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>SensingModule.h</name>
+    <path>E:/omnetpp-workspace/PECSN_project_tess/src/</path>
+    <filename>_sensing_module_8h.html</filename>
+    <class kind="class">SensingModule</class>
+  </compound>
+  <compound kind="class">
+    <name>SensingModule</name>
+    <filename>class_sensing_module.html</filename>
+    <base>omnetpp::cSimpleModule</base>
+    <member kind="function">
+      <type></type>
+      <name>SensingModule</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>af97fa611ecde2ca7e98a7b4215d0c3e1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~SensingModule</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>ae814421b88b1ae979fbde10e4212a65f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>a2e6462602dcb92fbd420c31d7490d504</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>a1306837dd24757d8ce80f3d2abd7526e</anchor>
+      <arglist>(cMessage *msg) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>performSensing</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>a11226deb82f6f40ab6abb6588b6b4a8a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>carID</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>a5006257463a7a2e7cdf901df0bdf1f6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>numCars</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>a73140318995e131f06c7aeae2176ed51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>double</type>
+      <name>sensingInterval</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>aa36f74a398ee1959ea2dc6ae1208ce0c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>double</type>
+      <name>communicationRange</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>ad4ffaad3d7431161875bd7bbb342ea63</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>sensingTimer</name>
+      <anchorfile>class_sensing_module.html</anchorfile>
+      <anchor>aa159fee59c6017eee96da8982663f74b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+</tagfile>

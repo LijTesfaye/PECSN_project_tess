@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>MobiltiyModule</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">MobiltiyModule</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#pecsn_project_tess">pecsn_project_tess</a></p>
+<h2 class="comptitle" style="float: left;">MobiltiyModule</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #00ff0040;">
+    <span class="mdl-chip__text">compound module</span>
+</span><div style="clear: both;"/>
+<p>(no description)</p>
+<img src="pecsn_project_tess.MobiltiyModule-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html" title="customMobility : RandomWaypointMobility
+
+Implements the Random Waypoint mobility model.
+
+Source:
+customMobility: RandomWaypointMobility {
+    // 
+    //carIndex = parent.carIndex;  // Pass carIndex to customMobility
+    // x
+    constraintAreaMinX = parent.minCoordValue;
+    constraintAreaMaxX = parent.maxCoordValue;
+    // y 
+    constraintAreaMinY = parent.minCoordValue;
+    constraintArea..." alt="customMobility : RandomWaypointMobility
+
+Implements the Random Waypoint mobility model.
+
+Source:
+customMobility: RandomWaypointMobility {
+    // 
+    //carIndex = parent.carIndex;  // Pass carIndex to customMobility
+    // x
+    constraintAreaMinX = parent.minCoordValue;
+    constraintAreaMaxX = parent.maxCoordValue;
+    // y 
+    constraintAreaMinY = parent.minCoordValue;
+    constraintArea..." coords="60,60,146,119">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="pecsn_project_tess.MobiltiyModule-usage.svg"></object>
+<h3 class="subtitle">Used in compound modules</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="pecsn_project_tess.Car" href="pecsn_project_tess.Car.html">Car</a></td>
+      <td><i>compound&nbsp;module</i></td>
+      <td>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>carId</td>
+      <td>int</td>
+      <td></td>
+      <td>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.subjectModule</td>
+      <td>string</td>
+      <td>"^"</td>
+      <td>
+<p>module path which determines the subject module, the motion of which this mobility model describes, the default value is the parent module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.coordinateSystemModule</td>
+      <td>string</td>
+      <td>""</td>
+      <td>
+<p>module path of the geographic coordinate system module</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.displayStringTextFormat</td>
+      <td>string</td>
+      <td>"p: %p\nv: %v"</td>
+      <td>
+<p>format string for the mobility module's display string text</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.updateDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables continuous update of the subject module's position via modifying its display string</p>
+</td>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.faceForward</td>
+      <td>bool</td>
+      <td>true</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="inet.mobility.single.RandomWaypointMobility" href="../../../inet4.5/doc/neddoc/inet.mobility.single.RandomWaypointMobility.html">customMobility</a>.initFromDisplayString</td>
+      <td>bool</td>
+      <td>true</td>
+      <td>
+<p>enables one time initialization from the subject module's display string</p>
+</td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">MobiltiyModule</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">carId</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">customMobility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">RandomWaypointMobility</span><span style="color: #000000; "> {
+            </span><span style="color: #808080; font-style: italic; ">// 
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">//carIndex = parent.carIndex;  // Pass carIndex to customMobility
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">// x
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">constraintAreaMinX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">constraintAreaMaxX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">// y 
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">constraintAreaMinY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">constraintAreaMaxY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">// z
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">constraintAreaMinZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">;
+            </span><span style="color: #000000; ">constraintAreaMaxZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">;
+            </span><span style="color: #808080; font-style: italic; ">//Initials
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">initialX</span><span style="color: #000000; "> = </span><span style="color: #800080; ">uniform</span><span style="color: #000000; ">(</span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">, </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; ">initialY</span><span style="color: #000000; "> = </span><span style="color: #800080; ">uniform</span><span style="color: #000000; ">(</span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minCoordValue</span><span style="color: #000000; ">, </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxCoordValue</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; ">initialZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">m</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">//Flat surface
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">// Choose a uniform speed for each car
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">speed</span><span style="color: #000000; "> = </span><span style="color: #800080; ">uniform</span><span style="color: #000000; ">(</span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">minSpeed</span><span style="color: #000000; ">, </span><span style="color: #000000; ">parent</span><span style="color: #000000; ">.</span><span style="color: #000000; ">maxSpeed</span><span style="color: #000000; ">);
+            </span><span style="color: #808080; font-style: italic; ">// Choose the waitime, 
+</span><span style="color: #000000; ">            </span><span style="color: #000000; ">waitTime</span><span style="color: #000000; "> = (</span><span style="color: #008000; ">0</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=101,40&quot;</span><span style="color: #000000; ">);
+            </span><span style="color: #000000; ">updateInterval</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">.</span><span style="color: #008000; ">1</span><span style="color: #000000; ">s</span><span style="color: #000000; ">;
+        }
+}
+</span></pre>
+File: <a href="src-MobiltiyModule.ned.html">src/MobiltiyModule.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>
