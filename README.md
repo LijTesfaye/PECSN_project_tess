@@ -22,7 +22,7 @@ Evaluate at least the overall rate of vehicles sensed per second for various val
 
 In all cases, it is up to the team to calibrate the scenarios so that meaningful results are obtained.
 
-## Project Deliverables
+### Project Deliverables
 
 - **Documentation**: According to the standards set during the lectures.
 - **Simulator Code**: The implementation of the simulation model.
